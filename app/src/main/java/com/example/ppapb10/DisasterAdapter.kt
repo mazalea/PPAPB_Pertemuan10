@@ -15,8 +15,16 @@ class DisasterAdapter(private val listDisaster: List<Disaster>, private val onCl
 
         fun bind(data: Disaster) {
             with(binding) {
-                txtDisasterName.text = data.nameDisaster
-                txtDisasterType.text = data.disasterType
+                txtPahlawanName.text = data.nameDisaster
+
+                val gambar_pahlawan = when (data.gambarPahlawan) {
+                    R.drawable.soedirman -> R.drawable.soedirman
+                    R.drawable.nyi_ageng_serang -> R.drawable.nyi_ageng_serang
+                    else -> R.drawable.default_img
+                }
+
+                imgPahlawan.setImageResource(gambar_pahlawan)
+
                 itemView.setOnClickListener {
                     onClickDisaster(data)
                 }
