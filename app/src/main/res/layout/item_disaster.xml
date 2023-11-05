@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_margin="8dp">
+    android:layout_margin="10dp">
+
     <ImageView
         android:id="@+id/img_pahlawan"
         android:src="@drawable/default_img"
         android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="200dp">
     </ImageView>
+
     <TextView
         android:id="@+id/txt_pahlawan_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pahlawan Name"
+        android:textStyle="bold"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-<!--    <TextView-->
-<!--        android:id="@+id/txt_disaster_type"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginHorizontal="8dp"-->
-<!--        android:text="Disaster Type"-->
-<!--        android:textSize="14sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/txt_disaster_name" />-->
-</LinearLayout>
+        android:layout_toRightOf="@id/img_pahlawan"/>
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/img_pahlawan"
+        android:layout_below="@id/txt_pahlawan_name"/>
+</RelativeLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Pahlawan Nasional</string>
+    <string name="desc_soedirman">Sudirman was a high-ranking Indonesian military officer during the Indonesian National Revolution. The first commander of the Indonesian National Armed Forces, he continues to be widely respected in the country. </string>
+    <string name="desc_nyiAgengSerang">Nyi Ageng Serang helped her father to fight against the Dutch colonial government, which attacked them because her father still maintained troops, in violation of the Treaty of Giyanti. After the battle, she was arrested and taken to Yogyakarta.</string>
+    <string name="desc_hermanJohannes">Herman Johannes was the head of the Indonesian Army Arsenal Laboratory during the independence war against Dutch occupation. His laboratory produced explosives which were used by Indonesian guerrillas to sabotage the movement of the Dutch military in Central Java.</string>
+    <string name="desc_pierreTendean">Pierre Andries Tendean was an Indonesian Army lieutenant. He was best known as a victim of the 30th September Movement (G30S) and posthumously awarded as revolution hero, later Indonesian national hero.</string>
+    <string name="desc_sultanAgung">Sultan Agung was a fighter against the incursions of the Dutch East India Company, a conqueror, and his existence within a cultural framework where myth and magic are intertwined with verifiable historical events and personages.</string>
 </resources>

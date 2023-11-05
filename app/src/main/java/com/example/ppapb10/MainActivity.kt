@@ -26,9 +26,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generateDummy(): List<Disaster> {
+        val deskripsiSoedirman: String = resources.getString(R.string.desc_soedirman)
+        val deskripsiNyiAgengSerang: String = resources.getString(R.string.desc_nyiAgengSerang)
+        val deskripsiHermanJohannes: String = resources.getString(R.string.desc_hermanJohannes)
+        val deskripsiPierreTendean: String = resources.getString(R.string.desc_pierreTendean)
+        val deskripsiSultanAgung: String = resources.getString(R.string.desc_sultanAgung)
+
         return listOf(
-            Disaster(R.drawable.soedirman, "Jenderal Soedirman"),
-            Disaster(R.drawable.nyi_ageng_serang, "Nyi Ageng Serang")
+            Disaster(R.drawable.soedirman, "Jenderal Soedirman", deskripsiSoedirman),
+            Disaster(R.drawable.nyi_ageng_serang, "Nyi Ageng Serang", deskripsiNyiAgengSerang),
+            Disaster(R.drawable.herman_johannes, "Herman Johannes", deskripsiHermanJohannes),
+            Disaster(R.drawable.pierre_tendean, "Pierre Tendean", deskripsiPierreTendean),
+            Disaster(R.drawable.sultan_agung, "Sultan Agung", deskripsiSultanAgung)
         )
     }
 }

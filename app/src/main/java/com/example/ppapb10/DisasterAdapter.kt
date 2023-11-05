@@ -16,10 +16,14 @@ class DisasterAdapter(private val listDisaster: List<Disaster>, private val onCl
         fun bind(data: Disaster) {
             with(binding) {
                 txtPahlawanName.text = data.nameDisaster
+                txtDescription.text = data.descPahlawan
 
                 val gambar_pahlawan = when (data.gambarPahlawan) {
                     R.drawable.soedirman -> R.drawable.soedirman
                     R.drawable.nyi_ageng_serang -> R.drawable.nyi_ageng_serang
+                    R.drawable.herman_johannes -> R.drawable.herman_johannes
+                    R.drawable.pierre_tendean -> R.drawable.pierre_tendean
+                    R.drawable.sultan_agung -> R.drawable.sultan_agung
                     else -> R.drawable.default_img
                 }
 
